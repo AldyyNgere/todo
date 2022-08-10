@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- INPUTS CONTAINER  -->
+      <div class="inputs-container">
+        <h1 class="title">Todo App</h1>
+        <p
+          for="authot"
+          style="margin-top: -2rem; margin-bottom: 1.6rem; text-align: center"
+        >
+          by Aldyy_
+        </p>
+        <form name="todo-form">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="activity">Your Activity :</label></td>
+                <td><input type="text" name="activity" id="activity" /></td>
+              </tr>
+              <tr>
+                <td><label for="dueTime">Due Time :</label></td>
+                <td><input type="time" name="dueTime" id="dueTime" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <div class="center duo-btn">
+          <button id="add" class="add-btn">Add</button>
+          <button id="reset" class="reset-btn">Reset</button>
+        </div>
+      </div>
+      <!-- INPUTS CONTAINER  END-->
+
+      <!-- TODO OUTPUT CONTAINER  -->
+      <div class="todo-output-container">
+        <h3 style="margin-bottom: 1.2rem"></h3>
+        <table class="table-todo" id="table-todo">
+          <thead>
+            <tr>
+              <th>Todo</th>
+              <th>Due Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-todo"></tbody>
+        </table>
+      </div>
+      <!-- TODO OUTPUT CONTAINER  END-->
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
